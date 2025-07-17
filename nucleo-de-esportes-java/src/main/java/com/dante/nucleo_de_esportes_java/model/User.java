@@ -12,6 +12,7 @@ import java.util.Set;
 import java.util.UUID;
 
 @Entity
+@Table(name = "users")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -36,7 +37,4 @@ public class User {
     @Column(nullable = false)
     private UserType role;
 
-
-    @OneToMany(mappedBy = "user")
-    private Set<Inscricao> inscricoes;
 }
