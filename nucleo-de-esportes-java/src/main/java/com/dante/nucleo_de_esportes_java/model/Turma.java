@@ -9,6 +9,7 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 @Entity
 @Table(name = "turma")
@@ -23,13 +24,13 @@ public class Turma {
     private Long id;
 
     @Column(nullable = false, name = "horario_inicio")
-    private LocalDateTime horario_inicio;
+    private LocalTime horario_inicio;
 
     @Column(nullable = false, name = "horario_fim")
-    private LocalDateTime horario_fim;
+    private LocalTime horario_fim;
 
     @Column(nullable = false)
-    private int limite_inscritos;
+    private Long limite_inscritos;
 
     @Column(nullable = false)
     private String dia_semana;
