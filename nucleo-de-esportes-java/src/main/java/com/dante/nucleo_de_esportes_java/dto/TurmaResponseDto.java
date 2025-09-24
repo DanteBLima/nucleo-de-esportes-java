@@ -7,7 +7,7 @@ import java.time.LocalTime;
 
 public record TurmaResponseDto(Long id, LocalTime horario_inicio, LocalTime horario_fim,
                                String dia_semana,
-                               Modalidade modalidade,
-                               Local local,
+                               String modalidade,
+                               String local,
                                Long limite_inscritos) {
 }

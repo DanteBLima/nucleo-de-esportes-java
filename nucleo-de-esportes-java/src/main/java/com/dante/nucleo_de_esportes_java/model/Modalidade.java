@@ -27,9 +27,6 @@ public class Modalidade {
     @Column(nullable = false)
     private Long price;
 
-
     @OneToMany(mappedBy = "modalidade")
     private Set<Turma> turmas;
-
-
 }

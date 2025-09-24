@@ -23,7 +23,7 @@ public class Local {
     private Long id;
 
     @Column(nullable = false)
-    private String nome;
+    private String name;
 
     @Column(nullable = false)
     private String campus;
